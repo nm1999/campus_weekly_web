@@ -1,0 +1,100 @@
+
+	
+		{{#if rows}}
+
+				{{#each rows}}
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+										<div class="card">
+											<div class="card-body">
+												
+												<div class="join-container">
+													<header class="join-header">
+														<h1><i class="fas fa-smile"></i> ChatRoom</h1>
+													</header>
+													<main class="join-main">
+														<form action="chat">
+																<label for="username">Username</label>
+																<input
+																	type="text"
+																	name="username"
+																	class="form-control"
+																	id="username"
+																	value="{{this.surname}} {{this.firstname}}"
+																	required
+																/>
+																<label for="room">Room</label>
+																<select name="room" id="room" class="form-control">
+																	<option value="18+">18+</option>
+																	<option value="Bankosa">Bankosa</option>
+																	<option value="LUMSA">LUMSA</option>
+																	<option value="ComputerScience">Computer Science</option>
+																	<option value="Arsenal">Arsenal</option>
+																	<option value="Alumni">Alumni</option>
+																</select>
+															<button type="submit" class="btn">Join Chat</button>
+														</form>
+													</main>
+												</div>
+
+											</div>
+										</div>
+							</div>
+						</div>
+					</div>
+				{{/each}}
+
+			{{else}}
+			
+			<!--Two column section-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+						<div class="card" style="margin-bottom: 10px;">
+							<div class="card-header">
+								<div class="d-flex justify-content-between">
+									<div class="text-right text-secondary">
+										<span class="badge badge-danger p-2" style="border-radius: 40%; font-weight: lighter;">NEW</span>
+										<span class="text-muted" style=" font-weight: lighter;">-- --, 2021</span>
+									</div>
+									<a href="#" data-toggle="modal" data-target="#sign-out"><i class="fa fa-share-alt fa-lg text-muted p-1"></i></a>
+								</div>
+							</div>
+							<div class="row padding card-body align-items-center">
+								<div class="col-lg-4">
+									<img class="img-fluid card-img" src="images/driving.jpg" alt="image" style="">
+								</div>
+								<div class="col-md-12 col-lg-8">                
+								
+									<h1 class="card-title">Ooops!....</h1>
+									<h5 style="font-weight: bold;" class="d-flex justify-content-between">
+										<span>                            
+											<a href="/feed" 
+														style="text-decoration: none; ">Looks like there are No Group chats yet...</a>
+										</span>
+										<img class="img-fluid" src="images/avatarT.jpg" alt="lukard"
+													style="width: 40px; margin-top: -15px; border-radius: 100%;">
+									</h5>
+									<h6 class="card-text" style="color: rgb(22, 15, 15); font-weight: bold;">
+										No worries though! This is an an easy solve.                        
+									</h6>
+									<h6 class="card-text" style="font-weight: bold;">
+										First stop would be to check with your Campus Editor;                       
+									</h6>
+									<h6 class="card-text" style="color: red; font-weight: bold;">
+										If symptoms persist, remember to visit the code doctor!                        
+									</h6>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		{{/if}}
+		
+	<script>
+        document.getElementById("username").readOnly = true; 
+    </script>
+

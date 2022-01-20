@@ -1,0 +1,122 @@
+
+
+    <!-- tables -->
+    <section>
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                    <div class="row ">
+                        <div class="col-xl-6 col-12 mb-4 mb-xl-0">
+                            <h3 class="text-muted text-center mb-3">CW Users</h3>
+
+                            <div class="card">
+                              <div class="card-body">
+
+                                  <div class="chat-container">
+                                    <header class="chat-header">
+                                      <div >
+                                        
+                                        <h4><i class="fas fa-users"></i> Users Online</h4>
+                                        <ul id="users"></ul>
+                                      </div>
+                                      
+                                    </header>
+                                    
+                                    
+                                  </div>
+                                  
+                              </div>
+                          </div>
+
+                        </div>
+                        <div class="col-xl-6 col-12">
+                            <h3 class="text-muted text-center mb-3">CW Room</h3>
+                                  <div class="chat-container">
+                                    <header class="chat-header">
+                                      <span class="d-flex justify-content-between " style="align-items: center;">
+                                        <span>
+                                          <i class="fas fa-smile" style="font-size: 20px;"></i>
+                                          <span>&nbsp;Room:&nbsp;</span> 
+                                        </span>
+                                        <span id="room-name" style="color: red;"></span>
+                                      </span>
+                                      <a id="leave-btn" class="btn" style="color: blue;">Leave Room</a>
+
+                                       
+                                      
+                                      
+                                    </header>
+                                    
+                                    <main class="chat-main">
+                                      <div class="chat-sidebar">
+                                      </div>
+                                      <div class="chat-messages"></div>
+                                    </main>
+                                    <div class="chat-form-container">
+                                      <form class="d-flex justify-content-between" id="chat-form">
+                                        <input
+                                          id="msg"
+                                          type="text"
+                                          class="form-control"
+                                          placeholder="Enter Message"
+                                          required
+                                          autocomplete="off"
+                                        />
+                                        <button class="btn"><i class="fa fa-send-o"></i> </button>
+                                      </form>
+                                    </div>
+                                  </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of tables -->
+
+    <!--Two column section-->
+    {{!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                <div class="card" style="margin-bottom: 10px;">
+                    <div class="card-header" style="background-color: #7386ff;">
+                        <div class="d-flex justify-content-between">
+                            <div class="text-right ">
+                                <span class="" style="font-weight: lighter; color: white;">Room: </span>
+                                <span class="p-2" style="font-weight: lighter; color: red;">18+</span>
+                            </div>
+                            <span class="badge p-2" style="cursor: pointer; background-color: rgb(235, 231, 231); color: blue; font-size: 15px;">Leave Room</span>
+                        </div>
+                    </div>
+                    <div class="row card-body align-items-center" >
+                            <div class="" style="background-color: greenyellow; ">
+                              <div class="chat-sidebar">
+                                      </div>
+                            </div>
+                            <div class="" style="background-color: hotpink; flex: 1">                                
+                                <div class="chat-messages">hey</div>                                
+                            </div>                        
+                    </div>
+                    <div class="card-footer" style="background-color: #7386ff;">
+                        <div >
+                          <form class="d-flex justify-content-between">
+                            <input type="text" class="form-control" placeholder="Enter Message">
+                            <button class="btn"><i class="fa fa-send-o"></i> Send</button>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> --}}
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
